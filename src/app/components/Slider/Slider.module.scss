@@ -22,23 +22,34 @@
       
       .title{
         display: none;
-        background-color: black;
-        opacity: .6;
+        background-color: #d9d9d9;
         width: 60%;
         position: absolute;
         padding: 3px;
-        color: white;
+        color: black;
         bottom: 20%;
         right: 0;
         text-align: start;
         padding-left: 20px;
         border-radius: 5px 0 0 5px;
-       
+      }
+      .propertyType{
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: black;
+        
+        color: white;
+        display: none;
+        border-radius: 0 5px 0 5px;
+        padding: 2px 10px;
+        
+
       }
       &.active{
         transform: scale(1.1);
         opacity: 1;
-        .title{
+        .title, .propertyType{
             display: block;
            
         }
@@ -47,7 +58,7 @@
   .picture:hover {
     transform: scale(1.1);
     opacity: 1;
-    .title{
+    .title, .propertyType{
         display: block;
        
     }

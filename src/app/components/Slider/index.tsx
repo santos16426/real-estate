@@ -40,6 +40,7 @@ const Slider = () => {
         autoPlay={true}
         autoPlaySpeed={5000}
         keyBoardControl={true}
+        arrows={false}
         containerClass={styles.sliderContainer}
     >
       {[...Array(properties.length)].map((_, index) => {
@@ -53,6 +54,7 @@ const Slider = () => {
           }}
         >
             <div className={styles.title}>{properties[index].title}</div>
+            <div className={styles.propertyType}>{properties[index].type}</div>
         </div>
       )})}
     </Carousel>

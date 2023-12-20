@@ -12,6 +12,7 @@ type AppContextProps = {
         shortDescription?: string;
         longDescription?: string;
         priceRange?: string
+        type: string;
 
     }[];
     blog: {
@@ -33,14 +34,14 @@ export const AppProvider: React.FC<AppProviderProps> = ({children}) => {
     }
 
     const propertiesContextValue = [
-        { title: 'Property A', image: "/images/property-1.jpg", location: "Lorem Ipsum A" },
-        { title: 'Property B', image: "/images/property-2.jpg", location: "Lorem Ipsum B" },
-        { title: 'Property C', image: "/images/property-3.jpg", location: "Lorem Ipsum C" },
-        { title: 'Property D', image: "/images/property-4.jpg", location: "Lorem Ipsum D" },
-        { title: 'Property E', image: "/images/property-5.jpg", location: "Lorem Ipsum E" },
-        { title: 'Property F', image: "/images/property-66.jpg", location: "Lorem Ipsum F" },
-        { title: 'Property G', image: "/images/property-7.jpg", location: "Lorem Ipsum G" },
-      ]
+        { title: 'Property A', image: "/images/property-1.jpg", location: "Lorem Ipsum A", shortDescription: "Short Desc A", longDescription: "Long Desc A", type: "Townhouse" },
+        { title: 'Property B', image: "/images/property-2.jpg", location: "Lorem Ipsum B", shortDescription: "Short Desc B", longDescription: "Long Desc B", type: "Townhouse" },
+        { title: 'Property C', image: "/images/property-3.jpg", location: "Lorem Ipsum C", shortDescription: "Short Desc C", longDescription: "Long Desc C", type: "Townhouse" },
+        { title: 'Property D', image: "/images/property-4.jpg", location: "Lorem Ipsum D", shortDescription: "Short Desc D", longDescription: "Long Desc D", type: "Townhouse" },
+        { title: 'Property E', image: "/images/property-5.jpg", location: "Lorem Ipsum E", shortDescription: "Short Desc E", longDescription: "Long Desc E", type: "Townhouse" },
+        { title: 'Property F', image: "/images/property-66.jpg", location: "Lorem Ipsum F", shortDescription: "Short Desc F", longDescription: "Long Desc F", type: "Townhouse" },
+        { title: 'Property G', image: "/images/property-7.jpg", location: "Lorem Ipsum G", shortDescription: "Short Desc G", longDescription: "Long Desc G", type: "Townhouse" },
+    ]
 
     const blogContextValue = {}
 
