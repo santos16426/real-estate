@@ -7,7 +7,12 @@ type AppContextProps = {
     };
     properties: {
         title: string;
+        location: string;
         image: string;
+        shortDescription?: string;
+        longDescription?: string;
+        priceRange?: string
+
     }[];
     blog: {
 
@@ -28,13 +33,13 @@ export const AppProvider: React.FC<AppProviderProps> = ({children}) => {
     }
 
     const propertiesContextValue = [
-        { title: 'Property A', image: "/images/property-1.jpg" },
-        { title: 'Property B', image: "/images/property-2.jpg" },
-        { title: 'Property C', image: "/images/property-3.jpg" },
-        { title: 'Property D', image: "/images/property-4.jpg" },
-        { title: 'Property E', image: "/images/property-5.jpg" },
-        { title: 'Property F', image: "/images/property-66.jpg" },
-        { title: 'Property G', image: "/images/property-7.jpg" },
+        { title: 'Property A', image: "/images/property-1.jpg", location: "Lorem Ipsum A" },
+        { title: 'Property B', image: "/images/property-2.jpg", location: "Lorem Ipsum B" },
+        { title: 'Property C', image: "/images/property-3.jpg", location: "Lorem Ipsum C" },
+        { title: 'Property D', image: "/images/property-4.jpg", location: "Lorem Ipsum D" },
+        { title: 'Property E', image: "/images/property-5.jpg", location: "Lorem Ipsum E" },
+        { title: 'Property F', image: "/images/property-66.jpg", location: "Lorem Ipsum F" },
+        { title: 'Property G', image: "/images/property-7.jpg", location: "Lorem Ipsum G" },
       ]
 
     const blogContextValue = {}

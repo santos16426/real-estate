@@ -20,6 +20,9 @@ const Homepage = () => {
     
     return(
     <div style={bgStyle} className={`${styles.background} ${backgroundClass}`} >
+        <div className={styles.description}>
+            description
+        </div>
         <div className={styles.overlay}/>
         <Slider/>
     </div>
