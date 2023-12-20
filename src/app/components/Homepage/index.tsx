@@ -1,15 +1,13 @@
 import { useEffect, useState } from 'react';
 import styles from './Homepage.module.scss'
 import Slider from '../Slider';
+import { useAppContext } from '@/app/context/AppContext';
 
-type HomepageProps = {
-    imagePath : string;
-    setActiveIndex : React.Dispatch<React.SetStateAction<number>>;
-    selectedIndex : number;
-}
-const Homepage:React.FC<HomepageProps> = ({imagePath, setActiveIndex, selectedIndex}) => {
+const Homepage = () => {
+    const {slider, properties, blog} = useAppContext();
+
     const bgStyle = {
-        backgroundImage : `url(${imagePath})`,
+        backgroundImage : `url(${properties[slider.activeIndex].image})`,
     }
     const [backgroundClass, setBackgroundClass] = useState(styles.fadeIn);
     useEffect(() => {
@@ -18,22 +16,12 @@ const Homepage:React.FC<HomepageProps> = ({imagePath, setActiveIndex, selectedIn
           setBackgroundClass(styles.fadeIn);
         }, 100); 
         return () => clearTimeout(timeoutId);
-      }, [selectedIndex]);
-    
-    
-      const handleSliderChange = (event: { index: number }) => {
-        setActiveIndex(event.index);
-        setBackgroundClass(styles.fadeOut);
-    
-        const timeoutId = setTimeout(() => {
-          setBackgroundClass(styles.fadeIn);
-        }, 100); 
-      };
+      }, [slider.activeIndex]);
     
     return(
     <div style={bgStyle} className={`${styles.background} ${backgroundClass}`} >
-        <div className={styles.overlay}></div>
-        <Slider totalItems={6} activeIndex={selectedIndex} onChange={handleSliderChange} />
+        <div className={styles.overlay}/>
+        <Slider/>
     </div>
 )}
 
