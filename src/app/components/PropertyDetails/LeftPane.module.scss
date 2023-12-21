@@ -1,0 +1,57 @@
+.leftPane {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .slider1 {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  
+    .slick-slide {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      
+    }
+  }
+  .backgroundImageContainer {
+    width: 100%;
+    height: 90lvh;
+    overflow: hidden;
+    object-fit: cover;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; // Change this to 'cover' if you want to maintain the aspect ratio
+    }
+  }
+  .thumbnailContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3271a5;
+    padding-top: 10px;
+  }
+  .slider2 {
+    width: 100%;
+  }
+  .thumbnailImageContainer {
+    height: 15lvh;
+    width: 100%;
+    overflow: hidden;
+    padding: 10px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; // Change this to 'cover' if you want to maintain the aspect ratio
+      }
+}
+
+
+  
