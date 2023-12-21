@@ -6,11 +6,11 @@
     left: 0;
     width: 100%;
     background-color: #3271a5;
-    padding: 10px 20px;
+    padding: 10px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.2); // Add more box-shadow 
     z-index: 1000;
   }
   

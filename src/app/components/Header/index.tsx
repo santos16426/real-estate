@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './Header.module.scss'; // Add your own SCSS file for styling
+import Link from 'next/link';
 
 const Header = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -9,8 +10,8 @@ const Header = () => {
   };
 
   return (
-    <header className={styles.header}>
-      <div className={styles.logo}><i className='bx bxs-home-smile'></i>Logo</div>
+    <header className={`${styles.header} px-5`}>
+      <div className={styles.logo}><Link href="/"><i className='bx bxs-home-smile'></i>Logo</Link></div>
       <nav className={styles.nav}>
         <ul>
             <li className={styles.navItem}>

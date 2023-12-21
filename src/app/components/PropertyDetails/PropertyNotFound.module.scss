@@ -1,0 +1,27 @@
+/* styles/PropertyNotFound.module.scss */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Light background color */
+  }
+  
+  .content {
+    text-align: center;
+    padding: 40px;
+    border-radius: 8px;
+
+  }
+  
+  .title {
+    font-size: 3rem;
+    color: #ff5757;
+    margin-bottom: 20px;
+  }
+  
+  .text {
+    margin-bottom: 15px;
+    color: #333; 
+  }
+  
