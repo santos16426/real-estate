@@ -32,3 +32,16 @@
     left: 0;
   }
  
+  .propertyFinder{
+    color:white;
+    padding: 30px;
+    position: absolute;
+    top: 20%;
+    left: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    // transition: left 0.5s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.2); // Add more box-shadow 
+    .searchField{
+      width: 100%;
+    }
+  }
