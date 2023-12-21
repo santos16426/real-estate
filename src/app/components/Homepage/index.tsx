@@ -49,11 +49,11 @@ const Homepage = () => {
   return (
     <div style={bgStyle} className={`${styles.background} ${backgroundClass} relative`}>
       <div
-        className={`${styles.propertyFinder}  w-1/3 text-left relative transition-all duration-500 ease-in-out ${
-          isPropertyFinderVisible ? 'left-0' : '-left-full'
-        }`}
+        className={`${styles.propertyFinder} w-1/3 text-left absolute`}
       >
-        <p className='text-2xl mb-5'>Property Finder</p>
+        <p className='text-2xl mb-5'>Property Finder 
+        {/* <i className='bx bx-search-alt'></i> */}
+        </p>
         <input
           className='border border-gray-300 px-3 py-2 w-full text-black'
           type='text'
@@ -61,7 +61,7 @@ const Homepage = () => {
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
         />
-        <div className='flex gap-2 '>
+        <div className='flex gap-4 mt-2'>
           <div className='flex flex-col w-full'>
             <label className='text-black-600'>Property Type:</label>
             <select
@@ -79,7 +79,7 @@ const Homepage = () => {
           <div className='flex flex-col w-full'>
             <label className='text-white-600'>Price Range:</label>
             <select
-              className='border border-gray-300 px-3 text-black py-2 w-full relative z-10 focus:outline-none focus:border-blue-500 focus:ring focus:ring-blue-200 transition-all duration-300'
+              className='border border-gray-300 px-3 text-black py-2 w-full relative z-10'
               value={priceRange}
               onChange={(e) => setPriceRange(e.target.value)}
             >
@@ -105,7 +105,7 @@ const Homepage = () => {
         </button> */}
       </div>
       <div className={`${styles.description} w-1/4 text-left `}>
-        <div className='bg-black bg-opacity-40 px-12 py-4 w-full text-white'>
+        <div className={`px-12 py-4 w-full text-white ${styles.propertyDetails}`}>
           <p className={`${styles.title} text-3xl`}>{properties[slider.activeIndex].title}</p>
           <p className={styles.propertyType}>{properties[slider.activeIndex].type}</p>
           <p className={styles.shortDescription}>{properties[slider.activeIndex].shortDescription}</p>
