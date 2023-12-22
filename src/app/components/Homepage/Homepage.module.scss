@@ -18,18 +18,28 @@
 
   .overlay {
     position: fixed;
-    top: 0;
+    
     right: 0;
     bottom: 0;
-    width: 50%; /* Adjust the width as needed */
+    height: 23%;
+    width: 20%; /* Adjust the width as needed */
     background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
     z-index: 1; /* Ensure the overlay is above other content */
+    @media (max-width: 767px) {
+      background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+
+    }
   }
 
   .description{
     position: absolute;
     bottom: 160px;
     left: 0;
+    @media (max-width: 767px) {
+      scale:.9;
+      bottom: 300px;
+      left:-25px;
+    }
   }
  
   .propertyFinder{
@@ -38,14 +48,19 @@
     position: absolute;
     top: 20%;
     left: 50px;
-    z-index: 999;
+    z-index: 999999;
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.2); // Add more box-shadow 
     .searchField{
       width: 100%;
     }
     border-radius: 0 20px 0 20px ;
-
+    @media (max-width: 767px) {
+      left: 5px;
+      top:10%;
+      scale:.9
+    }
+  
   }
   .propertyDetails{
     background-color:rgba(0, 0, 0, 0.5);

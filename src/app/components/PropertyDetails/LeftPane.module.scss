@@ -1,9 +1,16 @@
 .leftPane {
-    width: 100%;
+    width: 50%;
     height: 100vh;
     overflow: hidden;
+    position: fixed;
     display: flex;
     flex-direction: column;
+    flex: 0 0 auto;
+    @media (max-width: 767px) {
+      width: 100%;
+      position: relative;
+    }
+    
   }
   
   .slider1 {

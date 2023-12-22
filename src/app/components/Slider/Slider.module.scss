@@ -7,6 +7,18 @@
     transform: translateY(30%);
     z-index: 1;
     padding: 50px 10px;
+    @media (max-width: 767px) {
+      scale: 0.85;
+      width: 100%;
+      transform: translateY(80%);
+      left: -25px;
+      .picture{
+        .title, .propertyType{
+          // display: block;
+         
+      }
+      }
+    }
   }
   
   .picture {
@@ -18,8 +30,6 @@
     cursor: pointer;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, margin 0.3s ease-in-out;
     opacity: .8;
-    
-      
       .title{
         display: none;
         background-color: #d9d9d9;

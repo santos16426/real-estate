@@ -12,11 +12,14 @@
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.2); // Add more box-shadow 
     z-index: 1000;
+    @media (max-width: 767px) {
+    padding: 10px  30px;
+      
+    }
   }
   
   .logo {
     font-size: 24px;
-    font-weight: bold;
     cursor: pointer;
     color:white;
   }
@@ -101,8 +104,8 @@
   }
   
   .filledButton {
-    background-color: black;
-    color: #fff;
+    background-color: white;
+    color: black;
     padding: 10px 20px;
     cursor: pointer;
   }

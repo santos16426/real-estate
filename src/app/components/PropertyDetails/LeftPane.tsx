@@ -9,7 +9,6 @@ type LeftPaneProps = {
 };
 
 const LeftPane: React.FC<LeftPaneProps> = ({ propertyId }) => {
-  const [showThumbnails, setShowThumbnails] = useState(true);
   const slider1 = useRef<Slider>(null);
   const slider2 = useRef<Slider>(null);
 
@@ -72,14 +71,11 @@ const LeftPane: React.FC<LeftPaneProps> = ({ propertyId }) => {
     className: styles.slider2,
   };
 
-  const toggleThumbnails = () => {
-    setShowThumbnails(!showThumbnails);
-  };
   const goToSlide = (index: number) => {
     slider1.current?.slickGoTo(index);
   };
   return (
-    <div className={styles.leftPane}>
+    <div className={`${styles.leftPane} shadow-lg`}>
       <Slider {...settings1} ref={slider1}>
         {images.map((image, index) => (
           <div key={index} className={styles.backgroundImageContainer}

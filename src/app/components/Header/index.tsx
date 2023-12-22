@@ -10,9 +10,9 @@ const Header = () => {
   };
 
   return (
-    <header className={`${styles.header} px-5`}>
-      <div className={styles.logo}><Link href="/"><i className='bx bxs-home-smile'></i>Logo</Link></div>
-      <nav className={styles.nav}>
+    <header className={`${styles.header} px-2 sm:px-5`}>
+      <div className={styles.logo}><Link href="/">Logo</Link></div>
+      <nav className={`${styles.nav} hidden sm:flex`}>
         <ul>
             <li className={styles.navItem}>
             <span className={`${styles.navLink} ${styles.underlineOnHover}`}>About Us</span>
@@ -45,7 +45,7 @@ const Header = () => {
         </ul>
         </nav>
 
-        <div className={`${styles.buttonContainer} flex gap-2`}>
+        <div className={`${styles.buttonContainer} flex gap-2 hidden sm:flex`}>
             <button className={styles.outlinedButton}>Reserve Now</button>
             <button className={styles.filledButton}>Contact Us</button>
         </div>

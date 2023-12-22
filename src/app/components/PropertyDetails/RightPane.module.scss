@@ -1,0 +1,25 @@
+.rightPane{
+    flex: 1;
+    max-width: 50%;
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin-left: 50%;
+    @media (max-width: 767px) {
+        width: 100%;
+        position: relative;
+        margin-left: 0;
+        max-width: 100%;
+    }
+}
+
+.label{
+    color: gray;
+    font-size: .8rem;
+}
+.licenseWrapper{
+    @media (max-width: 767px) {
+        grid: initial;
+    }
+}

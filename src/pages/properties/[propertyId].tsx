@@ -21,7 +21,7 @@ const PropertyPage: React.FC = () => {
             <Header/>
             {
                 (property) ?
-                <div className="flex">
+                <div className="flex h-full flex-col sm:flex-row">
                     <LeftPane propertyId={propertyId}/>
                     <RightPane propertyId={propertyId}/>
                 </div>

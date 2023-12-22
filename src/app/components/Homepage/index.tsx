@@ -38,21 +38,18 @@ const Homepage = () => {
     setBackgroundClass(styles.fadeOut);
     const timeoutId = setTimeout(() => {
       setBackgroundClass(styles.fadeIn);
-    }, 100);
+    }, 200);
     return () => clearTimeout(timeoutId);
   }, [slider.activeIndex]);
 
-  const togglePropertyFinder = () => {
-    setPropertyFinderVisibility((prev) => !prev);
-  };
-
+  
   return (
     <div style={bgStyle} className={`${styles.background} ${backgroundClass} relative`}>
       <div
-        className={`${styles.propertyFinder} w-1/3 text-left absolute`}
+        className={`${styles.propertyFinder} w-full sm:w-1/3 text-left absolute`}
       >
         <p className='text-2xl mb-5'>Property Finder 
-        {/* <i className='bx bx-search-alt'></i> */}
+        
         </p>
         <input
           className='border border-gray-300 px-3 py-2 w-full text-black'
@@ -96,16 +93,11 @@ const Homepage = () => {
           onClick={handleSearch}
         >
           Search
+          <span><i className='ml-2 p-0 bx bx-search-alt'></i></span>
         </button>
-        {/* <button
-            className='absolute w-30 -right-24 bottom-24 w-40 rotate-90 bg-blue-500 text-white px-4 py-2 px-2 transition-all duration-300 hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-200'
-            onClick={togglePropertyFinder}
-            >
-            Property finder {isPropertyFinderVisible ? <i className='bx bx-chevrons-down' ></i> : <i className='bx bx-chevrons-up' ></i>}
-        </button> */}
       </div>
-      <div className={`${styles.description} w-1/4 text-left `}>
-        <div className={`px-12 py-4 w-full text-white ${styles.propertyDetails}`}>
+      <div className={`${styles.description} w-full sm:w-1/4 text-left `}>
+        <div className={`px-8 sm:px-12 py-4 w-full text-white ${styles.propertyDetails}`}>
           <p className={`${styles.title} text-3xl`}>{properties[slider.activeIndex].title}</p>
           <p className={styles.propertyType}>{properties[slider.activeIndex].type}</p>
           <p className={styles.shortDescription}>{properties[slider.activeIndex].shortDescription}</p>
