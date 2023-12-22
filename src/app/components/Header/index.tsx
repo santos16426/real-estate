@@ -15,10 +15,14 @@ const Header = () => {
       <nav className={`${styles.nav} hidden sm:flex`}>
         <ul>
             <li className={styles.navItem}>
-            <span className={`${styles.navLink} ${styles.underlineOnHover}`}>About Us</span>
+              <Link href="/about">
+                <span className={`${styles.navLink} ${styles.underlineOnHover}`}>About Us</span>
+              </Link>
             </li>
             <li className={styles.navItem}>
-            <span className={`${styles.navLink} ${styles.underlineOnHover}`}>Our Properties</span>
+              <Link href="/properties">
+                <span className={`${styles.navLink} ${styles.underlineOnHover}`}>Our Properties</span>
+              </Link>
             </li>
             <li
             className={`${styles.navItem} ${styles.dropdown} ${isDropdownOpen && styles.active}`}
