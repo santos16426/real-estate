@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <header className={`${styles.header} px-2 sm:px-5`}>
+    <header className={`${styles.header} bg-primary px-2 sm:px-5`}>
       <div className={styles.logo}><Link href="/">Logo</Link></div>
       <nav className={`${styles.nav} hidden sm:flex`}>
         <ul>

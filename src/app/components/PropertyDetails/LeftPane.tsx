@@ -85,7 +85,7 @@ const LeftPane: React.FC<LeftPaneProps> = ({ propertyId }) => {
         ))}
       </Slider>
 
-      <div className={styles.thumbnailContainer}>
+      <div className={`${styles.thumbnailContainer} bg-primary`}>
         <Slider {...settings2} ref={slider2}>
           {images.map((image, index) => (
             <div

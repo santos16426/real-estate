@@ -3,12 +3,12 @@ import Header from "@/app/components/Header";
 const PropertiesList =()=>(
     <>
         <Header/>
-        <div className={`pt-20 `}>
-            <section className={`p-40 px-16 flex-wrap `}>
-                <p className={`font-semibold text-5xl text-center content-center`}>
+        <div className={``}>
+            <div className={`py-20 px-40 flex-wrap bg-primary `}>
+                <p className={`font-semibold text-3xl`}>
                     List of Properties
                 </p>
-            </section>
+            </div>
            
         </div>
     </>

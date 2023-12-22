@@ -15,7 +15,7 @@ const RightPane:React.FC<RightPaneProps> = ({propertyId}) => {
         <p className={`${styles.type} text-xl text-gray-400`}>{property?.location}</p>
         <div className={`py-8`}>
             <p className={`${styles.label}`}>About {property?.title} </p>
-            <p className={`${styles.description}`}>{property?.longDescription}</p>
+            <p className={`${styles.description} text-justify`}>{property?.longDescription}</p>
         </div>
         <div className={`py-4`}>
             <p className={`${styles.label}`}>Estimated Price: </p>

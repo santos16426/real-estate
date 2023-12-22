@@ -89,7 +89,7 @@ const Homepage = () => {
           </div>
         </div>
         <button
-          className='float-right bg-blue-500 text-white px-4 py-2 mt-3 w-32 transition-all duration-300 hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-200'
+          className='float-right bg-primary text-white px-4 py-2 mt-3 w-32 transition-all duration-300 hover:bg-primary-700 focus:outline-none focus:ring focus:ring-primary-200'
           onClick={handleSearch}
         >
           Search
