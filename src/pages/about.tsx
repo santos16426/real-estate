@@ -1,12 +1,12 @@
 import Header from "@/app/components/Header";
 
-const AboutPage =()=>(
+const AboutPage = () => (
     <>
-        <Header/>
+        <Header />
         <div className={`pt-20 `}>
             <section className={`p-40 px-16 flex-wrap `}>
                 <p className={`font-semibold text-5xl text-center content-center`}>
-                Lorem Ipsum, Pellentesque interdum lectus diam, quis semper velit laoreet et. Praesent imperdiet tincidunt orci, at porttitor ipsum gravida a.
+                    Lorem Ipsum, Pellentesque interdum lectus diam, quis semper velit laoreet et. Praesent imperdiet tincidunt orci, at porttitor ipsum gravida a.
                 </p>
             </section>
             <section className={`p-40 px-16 bg-primary flex-wrap `}>
@@ -26,7 +26,7 @@ const AboutPage =()=>(
             </section>
             <section className={`p-40 px-16 flex-wrap `}>
                 <p className={`font-semibold text-5xl text-center`}>
-                Blogs
+                    Blogs
                 </p>
             </section>
             <footer className={`px-16 bg-primary flex-wrap`}>

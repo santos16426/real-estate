@@ -19,4 +19,13 @@
 
 body {
   font-family: 'montserrat', sans-serif;
+  
+}
+
+
+*{
+    scrollbar-width: none !important;
+    &::-webkit-scrollbar{
+        display: none !important;
+    }
 }

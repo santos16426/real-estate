@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import styles from './Homepage.module.scss';
-import Slider from '../Slider';
+import styles from '@/app/styles/Homepage.module.scss';
+import Slider from './Slider';
 import { useAppContext } from '@/app/context/AppContext';
 import Link from 'next/link';
 
@@ -20,7 +20,6 @@ const Homepage = () => {
   ];
 
   const handleSearch = () => {
-    // Handle search logic here based on searchText, propertyType, and priceRange
     console.log('Search:', {
       searchText,
       propertyType,
@@ -29,7 +28,7 @@ const Homepage = () => {
   };
 
   const bgStyle = {
-    backgroundImage: `url(${properties[slider.activeIndex].image})`,
+    backgroundImage: "url('/images/property-3.jpg')",
   };
 
   const [backgroundClass, setBackgroundClass] = useState(styles.fadeIn);
@@ -42,14 +41,18 @@ const Homepage = () => {
     return () => clearTimeout(timeoutId);
   }, [slider.activeIndex]);
 
-  
+
   return (
-    <div style={bgStyle} className={`${styles.background} ${backgroundClass} relative`}>
+    <div style={bgStyle} className='relative h-screen bg-cover bg-center p-32'>
+      <div className='text-right mt-20  max-w-4xl float-right'>
+        <p className='text-[3rem] text-black font-montserrat'>Discover Your Dream Home with <span className='font-semibold text-primary'>EpicEstate</span></p>
+        <p className='text-lg mt-2 text-gray-600 float-right'>Where Every Home is a Masterpiece - Discover Unmatched Luxury and Comfort</p>
+      </div>
+
       <div
-        className={`${styles.propertyFinder} w-full sm:w-1/3 text-left absolute`}
+        className='text-left absolute text-white p-8 bottom-[5%] left-10  bg-black bg-opacity-50 shadow-md rounded-lg w-6/12'
       >
-        <p className='text-2xl mb-5'>Property Finder 
-        
+        <p className='text-2xl mb-5'>Property Finder
         </p>
         <input
           className='border border-gray-300 px-3 py-2 w-full text-black'
@@ -89,26 +92,14 @@ const Homepage = () => {
           </div>
         </div>
         <button
-          className='float-right bg-primary text-white px-4 py-2 mt-3 w-32 transition-all duration-300 hover:bg-primary-700 focus:outline-none focus:ring focus:ring-primary-200'
+          className='float-right bg-primary text-white px-4 py-2 mt-3 w-fit transition-all duration-300 hover:bg-primary-700 focus:outline-none focus:ring focus:ring-primary-200'
           onClick={handleSearch}
         >
           Search
           <span><i className='ml-2 p-0 bx bx-search-alt'></i></span>
         </button>
       </div>
-      <div className={`${styles.description} w-full sm:w-1/4 text-left `}>
-        <div className={`px-8 sm:px-12 py-4 w-full text-white ${styles.propertyDetails}`}>
-          <p className={`${styles.title} text-3xl`}>{properties[slider.activeIndex].title}</p>
-          <p className={styles.propertyType}>{properties[slider.activeIndex].type}</p>
-          <p className={styles.shortDescription}>{properties[slider.activeIndex].shortDescription}</p>
-          <Link href={`/properties/${properties[slider.activeIndex].id}`} className='hover:underline'>
-            View Property <i className='bx bx-chevrons-right leading-normal'></i>
-          </Link>
-        </div>
-      </div>
-      <div className={styles.overlay} />
       <Slider />
-     
     </div>
   );
 };

@@ -2,7 +2,7 @@
     overflow: hidden;
     width: 40%;
     position: absolute;
-    top: 50%;
+    top: 60%;
     right: 0;
     transform: translateY(30%);
     z-index: 1;
@@ -13,9 +13,13 @@
       transform: translateY(80%);
       left: -25px;
       .picture{
+        position: relative;
         .title, .propertyType{
-          // display: block;
-         
+          display: block;
+      }
+      .propertyType{
+        top: 0;
+        right: 0;
       }
       }
     }

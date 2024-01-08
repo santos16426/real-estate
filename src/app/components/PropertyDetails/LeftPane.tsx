@@ -93,7 +93,7 @@ const LeftPane: React.FC<LeftPaneProps> = ({ propertyId }) => {
               className={styles.thumbnailImageContainer}
               onClick={() => goToSlide(index)}
             >
-              <Image width={200} height={200} src={image.thumbnail} alt={`Thumbnail ${index}`} className={styles.thumbnailImage} />
+              <Image width={200} height={200} src={image.thumbnail} alt={`Thumbnail ${index}`} className={`shadow-md ${styles.thumbnailImage}`} />
             </div>
           ))}
         </Slider>

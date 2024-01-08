@@ -25,7 +25,7 @@ const config: Config = {
         indigo: colors.indigo,
         red: colors.rose,
         yellow: colors.amber,
-        primary: '#FF90BC'
+        primary: '#132043'
       },
       minHeight: {
         '0': '0',
