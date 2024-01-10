@@ -1,13 +1,14 @@
 import Homepage from "@/app/components/Homepage"
 import Header from "@/app/components/Header";
+import Services from "@/app/components/Services";
+import FeaturedProperty from "@/app/components/FeaturedProperty";
 const App = () => {
   return (
     <>
       <Header />
       <Homepage />
-      <div className="bg-red-50 w-full h-screen">
-
-      </div>
+      <Services />
+      <FeaturedProperty />
     </>
   )
 }
