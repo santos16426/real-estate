@@ -37,7 +37,10 @@ const Homepage: React.FC = () => {
 
   return (
     <div className="relative h-screen flex flex-row">
-      <div style={bgStyle} className="bg-cover bg-center h-full w-full">
+      <div
+        style={bgStyle}
+        className="bg-cover bg-center h-full w-full bg-blend-hard-light"
+      >
         <div className="bg-black bg-opacity-50 h-full flex flex-col p-8">
           <div className="text-[2.1rem] lg:text-[3rem] text-white mt-24 lg:mt-52">
             Discover Your Epic Home Journey with{" "}
@@ -45,7 +48,7 @@ const Homepage: React.FC = () => {
               EpicEstate
             </div>
           </div>
-          <div className="text-[1rem] lg:text-[2rem] text-[#d9d9d9]">
+          <div className="text-[1rem] lg:text-[1.8rem] text-white opacity-75">
             Where Dreams Meet Realty
           </div>
         </div>
