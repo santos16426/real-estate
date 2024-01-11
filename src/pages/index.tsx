@@ -6,14 +6,14 @@ import EventNews from "@/app/components/EventNews";
 import Footer from "@/app/components/Footer";
 const App = () => {
   return (
-    <>
+    <div>
       <Header />
       <Homepage />
       <FeaturedProperty />
       <Services />
       <EventNews />
       <Footer />
-    </>
+    </div>
   );
 };
 export default App;

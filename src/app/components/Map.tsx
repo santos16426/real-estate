@@ -1,66 +1,72 @@
-import React, { useState } from 'react';
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+import React, { useState } from "react";
+import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
 interface MarkerPosition {
-    lat: number;
-    lng: number;
+  lat: number;
+  lng: number;
 }
 
 const containerStyle = {
-    width: '100%',
-    height: '100%',
+  width: "100%",
+  height: "100%",
 };
 
 const center: MarkerPosition = {
-    lat: 14.608887672424316,
-    lng: 121.02196502685547,
+  lat: 14.608887672424316,
+  lng: 121.02196502685547,
 };
 
 const mapOptions = {
-    disableDefaultUI: true,
+  disableDefaultUI: true,
 };
 
 const markerOptions: google.maps.Icon = {
-    url: '/images/pin.svg',
-    scaledSize: {
-        width: 50,
-        height: 50,
-    } as google.maps.Size,
+  url: "/images/pin.svg",
+  scaledSize: {
+    width: 50,
+    height: 50,
+  } as google.maps.Size,
 };
 
 const markers: MarkerPosition[] = [
-    {
-        lat: 14.608887672424316,
-        lng: 121.02196502685547,
-    },
-    { lat: 14.508887672424316, lng: 121.02196502685547 },
-    { lat: 14.608887672424316, lng: 121.12196502685547 },
-    { lat: 14.608887672424316, lng: 121.32196502685547 },
-    { lat: 14.608887672424316, lng: 121.52196502685547 },
+  {
+    lat: 14.608887672424316,
+    lng: 121.02196502685547,
+  },
+  { lat: 14.508887672424316, lng: 121.02196502685547 },
+  { lat: 14.608887672424316, lng: 121.12196502685547 },
+  { lat: 14.608887672424316, lng: 121.32196502685547 },
+  { lat: 14.608887672424316, lng: 121.52196502685547 },
 ];
 
-const GoogleMapsComponent: React.FC<{ apiKey: string | undefined }> = ({ apiKey }) => {
-    const [hoveredMarker, setHoveredMarker] = useState<google.maps.MapMouseEvent | null>(null);
-    if (!apiKey) return <div>No API key</div>;
+const GoogleMapsComponent: React.FC<{ apiKey: string | undefined }> = ({
+  apiKey,
+}) => {
+  const [hoveredMarker, setHoveredMarker] =
+    useState<google.maps.MapMouseEvent | null>(null);
+  if (!apiKey) return <div>No API key</div>;
 
+  const handleMarkerHover = (mouseEvent: google.maps.MapMouseEvent) => {
+    console.log((mouseEvent.domEvent as MouseEvent).clientX);
+    console.log((mouseEvent.domEvent as MouseEvent).clientY);
+    setHoveredMarker(mouseEvent);
+  };
 
+  const handleMarkerLeave = () => {
+    console.log("handleMarkerLeave");
 
-    const handleMarkerHover = (mouseEvent: google.maps.MapMouseEvent) => {
-        console.log((mouseEvent.domEvent as MouseEvent).clientX)
-        console.log((mouseEvent.domEvent as MouseEvent).clientY)
-        setHoveredMarker(mouseEvent);
-    };
+    setHoveredMarker(null);
+  };
 
-    const handleMarkerLeave = () => {
-        console.log('handleMarkerLeave')
-
-        setHoveredMarker(null);
-    };
-
-    return (
-        <LoadScript googleMapsApiKey={apiKey}>
-            <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={10} options={mapOptions}>
-                {markers.map((markerPosition, index) => (
+  return (
+    <LoadScript googleMapsApiKey={apiKey}>
+      <GoogleMap
+        mapContainerStyle={containerStyle}
+        center={center}
+        zoom={10}
+        options={mapOptions}
+      >
+        {/* {markers.map((markerPosition, index) => (
                     <Marker
                         key={index}
                         position={markerPosition}
@@ -68,9 +74,9 @@ const GoogleMapsComponent: React.FC<{ apiKey: string | undefined }> = ({ apiKey 
                     // onMouseOver={(mouseEvent) => handleMarkerHover(mouseEvent)}
                     // onMouseOut={handleMarkerLeave}
                     />
-                ))}
+                ))} */}
 
-                {hoveredMarker && (
+        {/* {hoveredMarker && (
 
                     <div
                         style={{
@@ -88,10 +94,10 @@ const GoogleMapsComponent: React.FC<{ apiKey: string | undefined }> = ({ apiKey 
                         {(hoveredMarker.domEvent as MouseEvent).clientY / 2}
                         {(hoveredMarker.domEvent as MouseEvent).clientX / 2}
                     </div>
-                )}
-            </GoogleMap>
-        </LoadScript>
-    );
+                )} */}
+      </GoogleMap>
+    </LoadScript>
+  );
 };
 
 export default GoogleMapsComponent;

@@ -68,9 +68,11 @@ const NavItems: React.FC = () => {
             )}
           </li>
           <li className="relative cursor-pointer">
-            <span className={`${styles.navLink} ${styles.underlineOnHover}`}>
-              Blog
-            </span>
+            <Link href="/news-event">
+              <span className={`${styles.navLink} ${styles.underlineOnHover}`}>
+                Blog
+              </span>
+            </Link>
           </li>
         </ul>
       </nav>
@@ -132,11 +134,13 @@ const NavItems: React.FC = () => {
                     )}
                   </li>
                   <li className="relative cursor-pointer">
-                    <span
-                      className={`${styles.navLink} ${styles.underlineOnHover}`}
-                    >
-                      Blog
-                    </span>
+                    <Link href="/news-event">
+                      <span
+                        className={`${styles.navLink} ${styles.underlineOnHover}`}
+                      >
+                        Blog
+                      </span>
+                    </Link>
                   </li>
                 </ul>
                 <SheetClose asChild>

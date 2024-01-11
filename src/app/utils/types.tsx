@@ -10,6 +10,7 @@ export type TCoordinates = {
 export type TProperty = {
   name: string;
   type: TPropertyType;
+  alias: string;
   image: string;
   description: string;
   location: {
@@ -26,4 +27,10 @@ export type TNewsEvent = {
   date: string;
   type: TNewsEventType;
   bannerPhoto: string;
+};
+
+export type TSearch = {
+  location?: string | null;
+  propertyType?: string | null;
+  priceRange?: string | null;
 };

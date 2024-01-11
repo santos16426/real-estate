@@ -11,7 +11,6 @@ const NewsEventCard: React.FC<TNewsEvent> = ({
   description,
   date,
 }) => {
-  console.log(bannerPhoto);
   return (
     <Card className="cursor-pointer rounded-md shadow-2xl overflow-hidden hover:border-0 border-0">
       <CardContent

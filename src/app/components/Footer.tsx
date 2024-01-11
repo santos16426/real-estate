@@ -67,10 +67,10 @@ const Footer = (props: Props) => {
             <Link href="/about-us">About us</Link>
           </li>
           <li>
-            <Link href="/about-us">Our Properties</Link>
+            <Link href="/properties">Our Properties</Link>
           </li>
           <li>
-            <Link href="/about-us">Blog</Link>
+            <Link href="/news-event">Blog</Link>
           </li>
           <li>
             <Link href="/about-us">Reserve Now</Link>
