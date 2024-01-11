@@ -1,15 +1,12 @@
-// pages/properties/[propertyId].tsx
 import React, { useState } from "react";
 import { useRouter } from "next/router";
-import Header from "@/app/components/Header";
 import { useAppContext } from "@/app/context/AppContext";
 import mockProject from "@/app/mocks/property.json";
 import mockGallery from "@/app/mocks/gallery.json";
 import PropertyDetails from "@/app/components/PropertyDetails";
-import PropertyNotFound from "@/app/components/PropertyNotFound";
 import { BookImage, Layers3, Share2 } from "lucide-react";
 import { PhotoGallery } from "@/app/components/Carousel";
-import { cn } from "@/app/utils/utils";
+import NotFound from "@/app/components/NotFound";
 
 const PropertyPage: React.FC = () => {
   const router = useRouter();
@@ -59,12 +56,7 @@ const PropertyPage: React.FC = () => {
     </div>
   );
 
-  return (
-    <>
-      <Header />
-      {property ? <HasProperty /> : <PropertyNotFound />}
-    </>
-  );
+  return <>{property ? <HasProperty /> : <NotFound type="Property" />}</>;
 };
 
 export default PropertyPage;

@@ -19,7 +19,7 @@
 
 body {
   font-family: 'montserrat', sans-serif;
-  
+
 }
 
 
@@ -28,4 +28,33 @@ body {
     &::-webkit-scrollbar{
         display: none !important;
     }
+}
+
+.sliderWrapper{
+  .sliderContainer{
+    .slick-list{
+      overflow: visible;
+      .slick-track{
+        display: flex;
+        gap:20px;
+        .slick-slide{
+          transform: scale(0.8);
+          --tw-grayscale: grayscale(100%);
+          filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+          transition: filter 0.3s ease-in-out;
+          --tw-brightness: brightness(.75);
+          &:hover{
+            filter: blur(0);
+
+          }
+        }
+        .slick-current{
+          --tw-grayscale: grayscale(0%);
+          filter: blur(0);
+          transform:scale(1.2);
+          z-index: 10;
+        }
+      }
+    }
+  }
 }

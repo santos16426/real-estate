@@ -25,7 +25,7 @@ const Homepage: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="scale-[90%] lg:scale-100 w-11/12 absolute z-10 left-1/2 bottom-[5px] lg:bottom-[20px] -translate-x-1/2">
+      <div className="scale-[90%] lg:scale-100 w-9/12 absolute z-10 left-1/2 bottom-[5px] lg:bottom-[20px] -translate-x-1/2">
         <PropertyFinder />
       </div>
 

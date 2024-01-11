@@ -7,6 +7,8 @@ import NewsEventCard from "./NewsEventCard";
 const EventNews: React.FC = () => {
   const featuredNewsAndEvent: TNewsEvent[] = mockNewsAndEvent.map((ne) => ({
     name: ne.name,
+    alias: ne.alias,
+    featured: ne?.featured,
     description: ne.description,
     date: ne.date,
     bannerPhoto: ne.bannerPhoto,
@@ -42,9 +44,11 @@ const EventNews: React.FC = () => {
         }}
         className="flex flex-row flex-wrap gap-10 justify-center items-center lg:-translate-x-1/2 lg:animate-slideIn"
       >
-        {featuredNewsAndEvent.map((ne, index) => (
-          <NewsEventCard key={index} {...ne} />
-        ))}
+        {featuredNewsAndEvent
+          .filter((n) => n.featured)
+          .map((ne, index) => (
+            <NewsEventCard key={index} {...ne} />
+          ))}
       </div>
       <Link
         href={"/news-event"}

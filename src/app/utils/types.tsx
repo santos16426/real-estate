@@ -22,6 +22,8 @@ export type TProperty = {
 };
 export type TNewsEventType = "news" | "event";
 export type TNewsEvent = {
+  alias: string;
+  featured: boolean;
   name: string;
   description: string;
   date: string;
