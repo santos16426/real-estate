@@ -4,9 +4,12 @@ import { useRouter } from "next/router";
 import Header from "@/app/components/Header";
 import { useAppContext } from "@/app/context/AppContext";
 import mockProject from "@/app/mocks/property.json";
+import mockGallery from "@/app/mocks/gallery.json";
 import PropertyDetails from "@/app/components/PropertyDetails";
 import PropertyNotFound from "@/app/components/PropertyNotFound";
 import { BookImage, Layers3, Share2 } from "lucide-react";
+import { PhotoGallery } from "@/app/components/Carousel";
+import { cn } from "@/app/utils/utils";
 
 const PropertyPage: React.FC = () => {
   const router = useRouter();
@@ -43,10 +46,10 @@ const PropertyPage: React.FC = () => {
     </div>
   );
   const HasProperty = () => (
-    <div className="flex flex-col lg:flex-row">
+    <div className="flex flex-col lg:flex-row overflow-hidden">
       <div className="lg:w-1/2 h-screen shadow-xl lg:fixed">
         <div className="relative pt-[75px]">
-          {activeTab}
+          <PhotoGallery images={mockGallery} />
           <Controller />
         </div>
       </div>

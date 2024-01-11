@@ -36,10 +36,14 @@ const config = {
           to :{
             'background-size': '',
           }
+        },
+        "toolbar-up": {
+          '100%': { height: "400px" },
         }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
+        "toolbar-up": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         'slideIn': 'slideIn 2s linear forwards',
         "bg-zoom": 'bg-zoom 0.3s ease-out forwards'
