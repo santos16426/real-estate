@@ -39,7 +39,7 @@ const PropertyPage: React.FC = () => {
         <div className="hover:gap-2  w-fit flex shrink flex-row justify-center group text-white items-center bg-black bg-opacity-70 p-4">
           <Share2 />
           <div className="overflow-hidden max-w-0 gallery-item group-hover:max-w-full ease-in-out transition-all duration-300">
-            Gallery
+            Share
           </div>
         </div>
       </div>

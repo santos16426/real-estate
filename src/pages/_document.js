@@ -16,6 +16,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           ></link>
         </Head>
+
         <body className="!scroll-smooth container">
           <Main />
           <NextScript />
