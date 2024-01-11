@@ -3,9 +3,9 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import Header from '@/app/components/Header';
 import { useAppContext } from '@/app/context/AppContext';
-import LeftPane from '@/app/components/PropertyDetails/LeftPane';
-import RightPane from '@/app/components/PropertyDetails/RightPane';
-import PropertyNotFound from '@/app/components/PropertyDetails/PropertyNotFound';
+
+import PropertyDetails from '@/app/components/PropertyDetails';
+import PropertyNotFound from '@/app/components/PropertyNotFound';
 
 const PropertyPage: React.FC = () => {
     const { properties } = useAppContext();
@@ -21,9 +21,9 @@ const PropertyPage: React.FC = () => {
             <Header />
             {
                 (property) ?
-                    <div className="flex h-full flex-col sm:flex-row">
-                        <LeftPane propertyId={propertyId} />
-                        <RightPane propertyId={propertyId} />
+                    <div className="flex h-full flex-col lg:flex-row">
+                        <div className='w-full'></div>
+                        <PropertyDetails propertyId={propertyId} />
                     </div>
                     :
                     <PropertyNotFound />

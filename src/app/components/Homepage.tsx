@@ -1,105 +1,130 @@
-import { useEffect, useState } from 'react';
-import styles from '@/app/styles/Homepage.module.scss';
-import Slider from './Slider';
-import { useAppContext } from '@/app/context/AppContext';
-import Link from 'next/link';
+import { useState } from "react";
+import { useAppContext } from "@/app/context/AppContext";
+import GoogleMapsComponent from "./Map";
+import { Input } from "./ui/input";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/app/components/ui/select";
 
-const Homepage = () => {
-  const { slider, properties, blog } = useAppContext();
-  const [searchText, setSearchText] = useState<string>('');
-  const [propertyType, setPropertyType] = useState<string>('');
-  const [priceRange, setPriceRange] = useState<string>('');
-  const [isPropertyFinderVisible, setPropertyFinderVisibility] = useState(false);
+const Homepage: React.FC = () => {
+  const [searchText, setSearchText] = useState<string>("");
+  const [propertyType, setPropertyType] = useState<string>("");
+  const [priceRange, setPriceRange] = useState<string>("");
 
   const priceRanges = [
-    { label: 'Any Price', value: '' },
-    { label: '5M - 10M', value: '5-10' },
-    { label: '10M - 15M', value: '10-15' },
-    { label: '15M - 20M', value: '15-20' },
-    { label: '20M and above', value: '20+' },
+    { label: "Any Price", value: "any" },
+    { label: "5M - 10M", value: "5-10" },
+    { label: "10M - 15M", value: "10-15" },
+    { label: "15M - 20M", value: "15-20" },
+    { label: "20M and above", value: "20+" },
   ];
 
   const handleSearch = () => {
-    console.log('Search:', {
+    console.log("Search:", {
       searchText,
       propertyType,
-      priceRange: `${priceRange[0]}M - ${priceRange[1]}M`,
+      priceRange,
     });
   };
 
   const bgStyle = {
-    backgroundImage: "url('/images/property-3.jpg')",
+    backgroundImage: "url('/images/home-banner.jpg')",
   };
 
-  const [backgroundClass, setBackgroundClass] = useState(styles.fadeIn);
-
-  useEffect(() => {
-    setBackgroundClass(styles.fadeOut);
-    const timeoutId = setTimeout(() => {
-      setBackgroundClass(styles.fadeIn);
-    }, 200);
-    return () => clearTimeout(timeoutId);
-  }, [slider.activeIndex]);
-
-
   return (
-    <div style={bgStyle} className='relative h-screen bg-cover bg-center p-32'>
-      <div className='text-right mt-20  max-w-4xl float-right'>
-        <p className='text-[3rem] text-black font-montserrat'>Discover Your Dream Home with <span className='font-semibold text-primary'>EpicEstate</span></p>
-        <p className='text-lg mt-2 text-gray-600 float-right'>Where Every Home is a Masterpiece - Discover Unmatched Luxury and Comfort</p>
-      </div>
-
+    <div className="relative h-screen flex flex-row">
       <div
-        className='text-left absolute text-white p-8 bottom-[5%] left-10  bg-black bg-opacity-50 shadow-md rounded-lg w-6/12'
+        style={bgStyle}
+        className="bg-cover bg-center h-full w-full bg-blend-hard-light"
       >
-        <p className='text-2xl mb-5'>Property Finder
-        </p>
-        <input
-          className='border border-gray-300 px-3 py-2 w-full text-black'
-          type='text'
-          placeholder='Where is your target location...'
-          value={searchText}
-          onChange={(e) => setSearchText(e.target.value)}
-        />
-        <div className='flex gap-4 mt-2'>
-          <div className='flex flex-col w-full'>
-            <label className='text-black-600'>Property Type:</label>
-            <select
-              className='border border-gray-300 px-3 py-2 w-full text-black'
-              value={propertyType}
-              onChange={(e) => setPropertyType(e.target.value)}
-            >
-              <option value='any'>All</option>
-              <option value='house'>House</option>
-              <option value='apartment'>Apartment</option>
-              <option value='condo'>Condo</option>
-              <option value='townhouse'>Townhouse</option>
-            </select>
+        <div className="bg-black bg-opacity-50 h-full flex flex-col p-8">
+          <div className="text-[2.1rem] lg:text-[3rem] text-white mt-24 lg:mt-52">
+            Discover Your Epic Home Journey with{" "}
+            <div className="inline font-semibold bg-gradient-to-b from-transparent from-50% to-50% to-primary">
+              EpicEstate
+            </div>
           </div>
-          <div className='flex flex-col w-full'>
-            <label className='text-white-600'>Price Range:</label>
-            <select
-              className='border border-gray-300 px-3 text-black py-2 w-full relative z-10'
-              value={priceRange}
-              onChange={(e) => setPriceRange(e.target.value)}
-            >
-              {priceRanges.map((range) => (
-                <option key={range.value} value={range.value}>
-                  {range.label}
-                </option>
-              ))}
-            </select>
+          <div className="text-[1rem] lg:text-[1.8rem] text-white opacity-75">
+            Where Dreams Meet Realty
           </div>
         </div>
-        <button
-          className='float-right bg-primary text-white px-4 py-2 mt-3 w-fit transition-all duration-300 hover:bg-primary-700 focus:outline-none focus:ring focus:ring-primary-200'
-          onClick={handleSearch}
-        >
-          Search
-          <span><i className='ml-2 p-0 bx bx-search-alt'></i></span>
-        </button>
       </div>
-      <Slider />
+      <div className="text-left scale-[90%] lg:scale-100 w-11/12 absolute z-10 text-white p-8 left-1/2 bottom-[5px] lg:bottom-[20px] -translate-x-1/2 bg-black bg-opacity-50 backdrop-blur-[1px]">
+        <div>
+          <div className="text-xl mb-2">
+            Find Your <div className="inline font-semibold">Dream Home</div>
+          </div>
+          <div className="flex flex-col lg:flex-row gap-2">
+            <Input
+              className="flex-grow text-black text-sm lg:text-xl py-6 capitalize font-semibold"
+              type="text"
+              placeholder="Where is your target location..."
+              value={searchText}
+              onChange={(e) => setSearchText(e.target.value)}
+            />
+            <Select
+              value={propertyType}
+              onValueChange={(e) => setPropertyType(e)}
+            >
+              <SelectTrigger className="text-black py-6 font-semibold w-full lg:w-1/4">
+                <SelectValue placeholder="Select Property Type" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem className="font-semibold text-md" value="any">
+                  Any
+                </SelectItem>
+                <SelectItem className="font-semibold text-md" value="house">
+                  House
+                </SelectItem>
+                <SelectItem className="font-semibold text-md" value="apartment">
+                  Apartment
+                </SelectItem>
+                <SelectItem className="font-semibold text-md" value="condo">
+                  Condo
+                </SelectItem>
+                <SelectItem className="font-semibold text-md" value="townhouse">
+                  Townhouse
+                </SelectItem>
+              </SelectContent>
+            </Select>
+
+            <Select value={priceRange} onValueChange={(e) => setPriceRange(e)}>
+              <SelectTrigger className="text-black py-6 font-semibold w-full lg:w-1/4">
+                <SelectValue placeholder="Select Price Range" />
+              </SelectTrigger>
+              <SelectContent>
+                {priceRanges.map((range, index) => (
+                  <SelectItem
+                    className="font-semibold text-md"
+                    value={range.value}
+                    key={index}
+                  >
+                    {range.label}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+
+            <button
+              className="rounded-md flex-flex-row whitespace-nowrap bg-primary text-white px-4 py-2 w-full lg:w-fit transition-all duration-300 hover:bg-primary-700 focus:outline-none focus:ring focus:ring-primary-200"
+              onClick={handleSearch}
+            >
+              Search
+              <span>
+                <i className="ml-2 p-0 bx bx-search-alt"></i>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-blue-50 h-full w-full lg:block hidden brightness-95">
+        <GoogleMapsComponent apiKey={process.env.NEXT_PUBLIC_GOOGLE_API_KEY} />
+      </div>
     </div>
   );
 };

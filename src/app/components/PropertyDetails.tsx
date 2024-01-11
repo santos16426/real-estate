@@ -1,38 +1,37 @@
-import styles from './RightPane.module.scss'
 import { useAppContext } from '@/app/context/AppContext';
-import {formatMoney} from '@/app/utils/formatter'
-type RightPaneProps = {
+import { formatMoney } from '@/app/utils/formatter'
+type PropertyDetailProps = {
     propertyId: string | undefined
 }
 
-const RightPane:React.FC<RightPaneProps> = ({propertyId}) => {
-    const {properties} = useAppContext();
+const PropertyDetails: React.FC<PropertyDetailProps> = ({ propertyId }) => {
+    const { properties } = useAppContext();
 
     const property = properties.find((property) => property.id === propertyId);
-    return(  
-    <div className={`w-1/2 py-24 px-12 h-screen flex-1 ${styles.rightPane}`}>
-        <p className={`${styles.title} text-3xl text-primary font-semibold`}>{property?.title}</p>
-        <p className={`${styles.type} text-xl text-gray-400`}>{property?.location}</p>
-        <div className={`py-8`}>
-            <p className={`${styles.label}`}>About {property?.title} </p>
-            <p className={`${styles.description} text-justify`}>{property?.longDescription}</p>
-        </div>
-        <div className={`py-4`}>
-            <p className={`${styles.label}`}>Estimated Price: </p>
-            <p className={`${styles.description} font-semibold`}><span className={`text-primary`}>PHP </span>{property?.price && formatMoney(property?.price)}</p>
-        </div>
-        <div className={`grid grid-cols-3 ${styles.licenseWrapper}`}>
-            <div className={`w-full`}>
-                <p className={`${styles.label}`}>HLURB LS No.: </p>
-                <p className={`${styles.description} font-semibold`}>1234567890</p>
+    return (
+        <div className='w-full py-24 px-12 h-full overflow-y-auto box-border bg-white'>
+            <p className='text-3xl text-primary font-semibold'>{property?.title}</p>
+            <p className='text-xl text-gray-400'>{property?.location}</p>
+            <div className='py-8'>
+                <p className='text-gray-500 text-lg'>About {property?.title} </p>
+                <p className='${styles.description} text-justify'>{property?.longDescription}</p>
             </div>
-            <div className={`w-full`}>
-                <p className={`${styles.label}`}>Ad Approval No.: </p>
-                <p className={`${styles.description} font-semibold`}>12345-ABCDE-5678</p>
+            <div className='py-4'>
+                <p className='text-gray-500 text-lg'>Estimated Price: </p>
+                <p className='${styles.description} font-semibold'><span className='text-primary'>PHP </span>{property?.price && formatMoney(property?.price)}</p>
             </div>
-        </div>
-        <div>
-            <p className={`text-lg text-primary mt-5 sm:mt-10`}>Plans </p>
+            <div className='grid grid-cols-3'>
+                <div className='w-full'>
+                    <p className='text-gray-500 text-lg'>HLURB LS No.: </p>
+                    <p className='${styles.description} font-semibold'>1234567890</p>
+                </div>
+                <div className='w-full'>
+                    <p className='text-gray-500 text-lg'>Ad Approval No.: </p>
+                    <p className='${styles.description} font-semibold'>12345-ABCDE-5678</p>
+                </div>
+            </div>
+            <div>
+                <p className='text-lg text-primary mt-5 sm:mt-10'>Plans </p>
                 <table className="table-fixed border-2 w-full">
                     <thead className="bg-blue-100 text-sm">
                         <tr>
@@ -71,7 +70,8 @@ const RightPane:React.FC<RightPaneProps> = ({propertyId}) => {
                         </tr>
                     </tfoot>
                 </table>
+            </div>
         </div>
-    </div>
-)}
-export default RightPane
+    )
+}
+export default PropertyDetails

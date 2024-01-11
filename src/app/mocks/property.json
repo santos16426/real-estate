@@ -1,0 +1,77 @@
+[
+    {
+      "name": "Luxury Heights Condominiums",
+      "type": "Condominium",
+      "image": "/images/property-66.jpg",
+      "description": "Experience elevated living in our luxurious condominiums. Stunning views, state-of-the-art amenities, and a prime city location make Luxury Heights a symbol of opulence.",
+      "location": {
+        "city": "Nasugbu, Batangas",
+        "coordinates": {
+          "lat": 14.567,
+          "long": 121.678
+        }
+      },
+      "priceRange": "1.8M - 2.7M",
+      "featured":true
+    },
+    {
+      "name": "Harmony Town Residences",
+      "type": "Town House",
+      "image": "/images/property-7.jpg",
+      "description": "Discover the perfect blend of comfort and style in our town residences. A harmonious community offering spacious homes, green spaces, and proximity to urban conveniences.",
+      "location": {
+        "city": "Silang, Cavite",
+        "coordinates": {
+          "lat": 14.789,
+          "long": 121.456
+        }
+      },
+      "priceRange": "3.2M - 4.4M",
+      "featured":true
+    },
+    {
+      "name": "Serenity Estates",
+      "type": "House",
+      "image": "/images/property-5.jpg",
+      "description": "Find serenity in your dream home. Serenity Estates offers spacious houses with modern design, lush gardens, and a peaceful ambiance for a tranquil living experience.",
+      "location": {
+        "city": "Gen. Trias, Cavite",
+        "coordinates": {
+          "lat": 14.901,
+          "long": 121.789
+        }
+      },
+      "priceRange": "2.1M - 3.9M",
+      "featured":true
+    },
+    {
+      "name": "Urban Haven Apartments",
+      "type": "Apartment",
+      "image": "/images/property-4.jpg",
+      "description": "Embrace city living at its finest in Urban Haven Apartments. Modern, stylish apartments designed for urban professionals, offering convenience and a vibrant lifestyle.",
+      "location": {
+        "city": "Calamba, Laguna",
+        "coordinates": {
+          "lat": 14.567,
+          "long": 121.678
+        }
+      },
+      "priceRange": "1.8M - 2.9M",
+      "featured":true
+    },
+    {
+      "name": "Sunset View Residences",
+      "type": "Condominium",
+      "image": "/images/property-3.jpg",
+      "description": "Witness breathtaking sunsets from your own haven at Sunset View Residences. These luxury condominiums boast panoramic views, upscale amenities, and a coveted location.",
+      "location": {
+        "city": "Sta. Rosa, Laguna",
+        "coordinates": {
+          "lat": 14.678,
+          "long": 121.567
+        }
+      },
+      "priceRange": "1.5M - 3M",
+      "featured":true
+    }
+  ]

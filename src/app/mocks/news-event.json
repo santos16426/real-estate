@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Grand Opening: Luxury Condo Complex",
+    "description": "Explore the elegance of our new luxury condo complex. Join us for the grand opening ceremony and discover the epitome of modern living.",
+    "date": "2023-03-15",
+    "type": "event",
+    "bannerPhoto": "https://imgs.search.brave.com/_skON--4wcLGlKMWU5Mlw9_o2KwDSJKqPN2vyurSeSE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdDMu/ZGVwb3NpdHBob3Rv/cy5jb20vMTAwNzk4/MC8xNDgzOS9pLzYw/MC9kZXBvc2l0cGhv/dG9zXzE0ODM5NjU4/OS1zdG9jay1waG90/by10aGUtd2F2ZXJs/eS1jb25kb21pbml1/bS1taWFtaS1iZWFj/aC5qcGc"
+  },
+  {
+    "name": "Market Watch: Housing Trends 2024",
+    "description": "Stay informed about the latest housing trends. Our experts analyze the market to provide insights into the real estate landscape for 2024.",
+    "date": "2023-04-02",
+    "type": "news",
+    "bannerPhoto": "https://imgs.search.brave.com/3uiKHXUQyS6tb6P3Ws4lu2AVhdydcvubwi-9-8FOjf4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTA3/MDExNzYxOC9waG90/by9hZXJpYWwtdmll/dy1vZi1hLW5ldy1y/ZXNpZGVudGlhbC1u/ZWlnaGJvcmhvb2Qu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PVZSQXEwMG0xV3Jq/b21QdmVIQ1pmN1pI/X00zSHdvUTZrcHlQ/NjdyaHVZS0E9"
+  },
+  {
+    "name": "Award-Winning Architect Designs New Residential Complex",
+    "description": "Experience the brilliance of an award-winning architect as we unveil our latest residential complex. Join us for an exclusive tour and witness architectural excellence.",
+    "date": "2023-03-25",
+    "type": "event",
+    "bannerPhoto": "https://imgs.search.brave.com/fHPq-xUYF4_RzQ9tbCo9eDs66X4bhlazF4vo6yCnuoE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxMy8w/NC8xMS8xOS80Ni9i/dWlsZGluZy0xMDI4/NDBfNjQwLmpwZw"
+  },
+  {
+    "name": "Exclusive Property Showcase",
+    "description": "Don't miss the chance to explore exclusive properties in our showcase event. From stylish apartments to spacious homes, find your dream property.",
+    "date": "2023-05-20",
+    "type": "event",
+    "bannerPhoto": "https://imgs.search.brave.com/O9gRQi3am4aAlSjA78e0FmWZXFSY6qEkT6zwYF7yk-o/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9wbHVz/LnVuc3BsYXNoLmNv/bS9wcmVtaXVtX3Bo/b3RvLTE2ODc5NjAx/MTcwNjktNTY3YTQ1/NmZlNWYzP3E9ODAm/dz0xMDAwJmF1dG89/Zm9ybWF0JmZpdD1j/cm9wJml4bGliPXJi/LTQuMC4zJml4aWQ9/TTN3eE1qQTNmREI4/TUh4elpXRnlZMmg4/TVRkOGZIQnliM0Js/Y25SNWZHVnVmREI4/ZkRCOGZId3c"
+  },
+  {
+    "name": "New Urban Development Project Announced",
+    "description": "Exciting news! A new urban development project is on the horizon. Learn about the vision and features of this upcoming addition to the cityscape.",
+    "date": "2023-06-10",
+    "type": "news",
+    "bannerPhoto": "https://imgs.search.brave.com/btkX5uTSHjxc8WRSecbR2obP5wMkTYALKkHXAMS-Ays/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxNC8w/OS8xOC8xMS81Ni9z/a3lzY3JhcGVycy00/NTA3OTNfNjQwLmpw/Zw"
+  },
+  {
+    "name": "Real Estate Investment Seminar",
+    "description": "Explore opportunities in real estate investment. Join our seminar where experts will share valuable insights and tips for making informed investment decisions.",
+    "date": "2023-07-08",
+    "type": "event",
+    "bannerPhoto": "https://imgs.search.brave.com/rg5CqgeAw2RAx8BavNs0WBP6QNsUzTbZGpXjZo4k-sM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9zYXZlLW1vbmV5/LWludmVzdC1zdG9j/a3MtZmluYW5jaWFs/LWdyb3d0aC1pbmNv/bWVfMTAyMjEtMTM2/NzguanBnP3NpemU9/NjI2JmV4dD1qcGc"
+  }
+]

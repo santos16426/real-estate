@@ -1,41 +1,55 @@
-import type { Config } from 'tailwindcss'
-const colors = require('tailwindcss/colors')
-const config: Config = {
+import type { Config } from "tailwindcss"
+
+const config = {
+  darkMode: ["class"],
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}',
   ],
+  prefix: "",
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      keyframes: {
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+        'slideIn': {
+          'to': {
+            transform: 'translateX(0)',
+          },
+        },
+        'bg-zoom' :{
+          to :{
+            'background-size': '',
+          }
+        }
       },
-      fontFamily: {
-        montserrat: ['Montserrat', 'sans-serif'],
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
+        'slideIn': 'slideIn 2s linear forwards',
+        "bg-zoom": 'bg-zoom 0.3s ease-out forwards'
       },
-      colors: {
-        transparent: 'transparent',
-        current: 'currentColor',
-        black: colors.black,
-        white: colors.white,
-        gray: colors.trueGray,
-        indigo: colors.indigo,
-        red: colors.rose,
-        yellow: colors.amber,
+      colors:{
         primary: '#132043'
-      },
-      minHeight: {
-        '0': '0',
-        '1/4': '25%',
-        '1/2': '50%',
-        '3/4': '75%',
-        'full': '100%',
-       }
+      }
     },
   },
-  plugins: [],
-}
+  plugins: [require("tailwindcss-animate")],
+} satisfies Config
+
 export default config
