@@ -17,4 +17,13 @@ export type TProperty = {
     coordinates: TCoordinates;
   };
   priceRange: string;
+  featured?: boolean;
+};
+export type TNewsEventType = "news" | "event";
+export type TNewsEvent = {
+  name: string;
+  description: string;
+  date: string;
+  type: TNewsEventType;
+  bannerPhoto: string;
 };

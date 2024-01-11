@@ -11,7 +11,8 @@
           "long": 121.678
         }
       },
-      "priceRange": "1.8M - 2.7M"
+      "priceRange": "1.8M - 2.7M",
+      "featured":true
     },
     {
       "name": "Harmony Town Residences",
@@ -25,7 +26,8 @@
           "long": 121.456
         }
       },
-      "priceRange": "3.2M - 4.4M"
+      "priceRange": "3.2M - 4.4M",
+      "featured":true
     },
     {
       "name": "Serenity Estates",
@@ -39,7 +41,8 @@
           "long": 121.789
         }
       },
-      "priceRange": "2.1M - 3.9M"
+      "priceRange": "2.1M - 3.9M",
+      "featured":true
     },
     {
       "name": "Urban Haven Apartments",
@@ -53,7 +56,8 @@
           "long": 121.678
         }
       },
-      "priceRange": "1.8M - 2.9M"
+      "priceRange": "1.8M - 2.9M",
+      "featured":true
     },
     {
       "name": "Sunset View Residences",
@@ -67,6 +71,7 @@
           "long": 121.567
         }
       },
-      "priceRange": "1.5M - 3M"
+      "priceRange": "1.5M - 3M",
+      "featured":true
     }
   ]

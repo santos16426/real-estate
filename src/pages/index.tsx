@@ -2,6 +2,8 @@ import Homepage from "@/app/components/Homepage";
 import Header from "@/app/components/Header";
 import Services from "@/app/components/Services";
 import FeaturedProperty from "@/app/components/FeaturedProperty";
+import EventNews from "@/app/components/EventNews";
+import Footer from "@/app/components/Footer";
 const App = () => {
   return (
     <>
@@ -9,7 +11,8 @@ const App = () => {
       <Homepage />
       <FeaturedProperty />
       <Services />
-      <div className="h-screen"></div>
+      <EventNews />
+      <Footer />
     </>
   );
 };

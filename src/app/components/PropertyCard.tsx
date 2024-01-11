@@ -2,7 +2,7 @@ import React from "react";
 import { Card, CardContent } from "@/app/components/ui/card";
 import { TProperty } from "../utils/types";
 import { Badge } from "./ui/badge";
-import styles from "@/app/styles/PropertyCard.module.scss";
+import styles from "@/app/styles/Card.module.scss";
 import { cn } from "../utils/utils";
 const PropertyCard: React.FC<TProperty> = ({
   name,
