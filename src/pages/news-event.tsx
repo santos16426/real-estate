@@ -104,8 +104,8 @@ const NewsAndEvent = () => (
       </div>
       <div className="mt-16 px-5 lg:px-32 flex flex-col lg:flex-row flex-wrap gap-5 items-center justify-center">
         {newsAndEvent.map((ne, index) => (
-          <div className="w-fit">
-            <NewsEventCard key={index} {...ne} />
+          <div className="w-fit" key={index}>
+            <NewsEventCard {...ne} />
           </div>
         ))}
       </div>
