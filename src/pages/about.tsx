@@ -5,7 +5,6 @@ import Services from "@/app/components/Services";
 
 const AboutPage = () => (
   <>
-    <Header />
     <div className="pt-10 lg:pt-20">
       <section className="p-20 lg:p-40 px-16 flex-wrap">
         <p

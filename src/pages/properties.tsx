@@ -37,7 +37,6 @@ const PropertiesList = () => {
   }, [searchFilters]);
   return (
     <>
-      <Header />
       <div
         className="relative h-screen flex flex-row"
         style={{

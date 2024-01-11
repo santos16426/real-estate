@@ -25,7 +25,7 @@ type AppContextProps = {
 const AppContext = createContext<AppContextProps | undefined>(undefined);
 
 type AppProviderProps = {
-  children: ReactNode; // Define children prop
+  children: ReactNode;
 };
 export const AppProvider: React.FC<AppProviderProps> = ({ children }) => {
   const [sliderActiveIndex, setSliderActiveIndex] = useState<number>(0);
