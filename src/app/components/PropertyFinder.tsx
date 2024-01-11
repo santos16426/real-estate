@@ -34,7 +34,10 @@ const PropertyFinder = (props: Props) => {
     <div className="text-left  text-white p-8  bg-black bg-opacity-50 backdrop-blur-[1px]">
       <div>
         <div className="text-xl mb-2">
-          Find Your <div className="inline font-semibold">Dream Home</div>
+          Find Your{" "}
+          <span className="inline font-semibold bg-gradient-to-b from-transparent from-50% to-50% to-primary">
+            Dream Home
+          </span>
         </div>
         <div className="flex flex-col lg:flex-row gap-2">
           <Input

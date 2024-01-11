@@ -38,7 +38,7 @@ const PropertiesList = () => {
   return (
     <>
       <div
-        className="relative h-screen flex flex-row"
+        className="relative h-screen flex flex-col lg:flex-row"
         style={{
           backgroundImage: "url(/images/bg.jpeg)",
           backgroundPosition: "top left",
@@ -47,7 +47,7 @@ const PropertiesList = () => {
       >
         <div className="absolute top-0 w-full h-full bg-black bg-opacity-40"></div>
 
-        <div className="h-full w-full flex flex-col pt-[75px] text-white">
+        <div className="h-full w-full flex flex-col pt-[60px] lg:pt-[75px] text-white">
           <PropertyFinder />
           <p className="text-2xl z-10 mx-8 mt-5">
             List of{" "}
@@ -55,7 +55,7 @@ const PropertiesList = () => {
               Properties
             </span>
           </p>
-          <ScrollArea className="p-8 z-10">
+          <ScrollArea className="p-2 lg:p-8 z-10">
             <div className="flex flex-row flex-wrap gap-2">
               {projects.map((project, index) => (
                 <PropertyCard key={index} {...project} className="scale-90" />
