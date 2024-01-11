@@ -4,20 +4,24 @@ import Link from "next/link";
 import mockProject from "@/app/mocks/property.json";
 import { TCoordinates, TProperty, TPropertyType } from "../utils/types";
 const FeaturedProperty: React.FC = () => {
-  const featuredProperties: TProperty[] = mockProject.map((project) => ({
-    name: project.name,
-    type: project.type as TPropertyType,
-    image: project.image,
-    description: project.description,
-    location: {
-      city: project.location.city,
-      coordinates: {
-        lat: project.location.coordinates.lat,
-        long: project.location.coordinates.long,
-      } as TCoordinates,
-    },
-    priceRange: project.priceRange,
-  }));
+  const featuredProperties: TProperty[] = mockProject
+    .filter((p) => p.featured)
+    .map((project) => ({
+      name: project.name,
+      alias: project.alias,
+      type: project.type as TPropertyType,
+      image: project.image,
+      description: project.description,
+      location: {
+        city: project.location.city,
+        coordinates: {
+          lat: project.location.coordinates.lat,
+          long: project.location.coordinates.long,
+        } as TCoordinates,
+      },
+      priceRange: project.priceRange,
+      featured: project.featured,
+    }));
   return (
     <div
       style={{

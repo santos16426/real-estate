@@ -1,77 +1,157 @@
 [
-    {
-      "name": "Luxury Heights Condominiums",
-      "type": "Condominium",
-      "image": "/images/property-66.jpg",
-      "description": "Experience elevated living in our luxurious condominiums. Stunning views, state-of-the-art amenities, and a prime city location make Luxury Heights a symbol of opulence.",
-      "location": {
-        "city": "Nasugbu, Batangas",
-        "coordinates": {
-          "lat": 14.567,
-          "long": 121.678
-        }
-      },
-      "priceRange": "1.8M - 2.7M",
-      "featured":true
-    },
-    {
-      "name": "Harmony Town Residences",
-      "type": "Town House",
-      "image": "/images/property-7.jpg",
-      "description": "Discover the perfect blend of comfort and style in our town residences. A harmonious community offering spacious homes, green spaces, and proximity to urban conveniences.",
-      "location": {
-        "city": "Silang, Cavite",
-        "coordinates": {
-          "lat": 14.789,
-          "long": 121.456
-        }
-      },
-      "priceRange": "3.2M - 4.4M",
-      "featured":true
-    },
-    {
-      "name": "Serenity Estates",
-      "type": "House",
-      "image": "/images/property-5.jpg",
-      "description": "Find serenity in your dream home. Serenity Estates offers spacious houses with modern design, lush gardens, and a peaceful ambiance for a tranquil living experience.",
-      "location": {
-        "city": "Gen. Trias, Cavite",
-        "coordinates": {
-          "lat": 14.901,
-          "long": 121.789
-        }
-      },
-      "priceRange": "2.1M - 3.9M",
-      "featured":true
-    },
-    {
-      "name": "Urban Haven Apartments",
-      "type": "Apartment",
-      "image": "/images/property-4.jpg",
-      "description": "Embrace city living at its finest in Urban Haven Apartments. Modern, stylish apartments designed for urban professionals, offering convenience and a vibrant lifestyle.",
-      "location": {
-        "city": "Calamba, Laguna",
-        "coordinates": {
-          "lat": 14.567,
-          "long": 121.678
-        }
-      },
-      "priceRange": "1.8M - 2.9M",
-      "featured":true
-    },
-    {
-      "name": "Sunset View Residences",
-      "type": "Condominium",
-      "image": "/images/property-3.jpg",
-      "description": "Witness breathtaking sunsets from your own haven at Sunset View Residences. These luxury condominiums boast panoramic views, upscale amenities, and a coveted location.",
-      "location": {
-        "city": "Sta. Rosa, Laguna",
-        "coordinates": {
-          "lat": 14.678,
-          "long": 121.567
-        }
-      },
-      "priceRange": "1.5M - 3M",
-      "featured":true
+  {
+  "name": "Luxury Heights Condominiums",
+  "alias": "luxury-heights-condominiums",
+  "type": "Condominium",
+  "image": "/images/property-66.jpg",
+  "description": "Discover elevated living at Luxury Heights Condominiums, where opulence meets sophistication. Offering stunning views, state-of-the-art amenities, and a prime location in Nasugbu, Batangas, this luxurious enclave redefines the essence of modern living. Immerse yourself in the epitome of comfort and elegance, making Luxury Heights your symbol of prestige and refined lifestyle. Luxury Heights Condominiums prioritizes the privacy and tranquility of its residents. With a limited number of units per floor, each resident enjoys a sense of exclusivity and peaceful living. The meticulously designed layout ensures minimal shared walls, fostering an environment where serenity and seclusion are paramount. Whether unwinding on your private balcony or indulging in the tranquility of the landscaped gardens, Luxury Heights provides a haven of solitude amidst the bustling city. Culinary enthusiasts will delight in the gourmet kitchens featured in every unit. Equipped with top-of-the-line appliances and ample counter space, these kitchens are designed for both functionality and style. Residents can unleash their culinary creativity in a space that seamlessly blends aesthetics with practicality. The open layout encourages socializing while preparing meals, creating a welcoming atmosphere for gatherings and celebrations.Living at Luxury Heights comes with a range of exclusive member benefits, elevating the residential experience to new heights. Residents gain privileged access to curated events, wellness programs, and discounts at partner establishments. The condominium's commitment to fostering a close-knit community extends beyond the physical spaces, creating opportunities for residents to connect, share experiences, and forge lasting relationships. Luxury Heights is not just a residence; it's a community that values the well-being and fulfillment of its members.",
+  "location": {
+    "city": "Nasugbu, Batangas",
+    "coordinates": {
+      "lat": 14.567,
+      "long": 121.678
     }
-  ]
+  },
+  "priceRange": "1.8M - 2.7M",
+  "featured": true
+},
+  {
+    "name": "Harmony Town Residences",
+    "alias": "harmony-town-residences",
+    "type": "Town House",
+    "image": "/images/property-7.jpg",
+    "description": "Experience the perfect blend of comfort and style at Harmony Town Residences in Silang, Cavite. Nestled in a harmonious community, these spacious townhouses offer a tranquil escape with green spaces and close proximity to urban conveniences. Discover a lifestyle where serenity meets convenience, making Harmony Town Residences the ideal haven for those seeking a balanced and vibrant living experience. Each residence is designed for modern living, providing a harmonious environment for families to create lasting memories. The townhouses feature well-appointed kitchens with modern appliances, expansive living areas that open to private gardens, and master suites that exude luxury. Harmony Town Residences also boasts community amenities such as a clubhouse, jogging paths, and playgrounds, fostering a sense of community among residents. Harmony Town Residences go beyond the conventional, offering versatile and multifunctional spaces that adapt to the evolving needs of modern families. Each townhouse is designed with flexibility in mind, providing residents the freedom to customize their living spaces. From convertible home offices to adaptable family rooms, these spaces empower residents to create environments that resonate with their unique lifestyles. Architectural elegance and timeless design define the aesthetic allure of Harmony Town Residences. The exteriors showcase a harmonious blend of contemporary and classic elements, creating an enduring and visually pleasing facade. The meticulous attention to architectural details extends into the interiors, where high ceilings, arched doorways, and refined finishes evoke a sense of timeless sophistication. Harmony Town Residences stand as a testament to the enduring allure of classical design principles coupled with modern functionality. Harmony Town Residences embrace eco-friendly living practices, championing sustainability in every aspect. From energy-efficient lighting and appliances to water-saving fixtures, these townhouses are crafted with a commitment to reducing environmental impact. The incorporation of green building materials and practices ensures that residents not only enjoy a luxurious lifestyle but also contribute to the preservation of the natural environment, making Harmony Town Residences a community dedicated to sustainable living.",
+    "location": {
+      "city": "Silang, Cavite",
+      "coordinates": {
+        "lat": 14.789,
+        "long": 121.456
+      }
+    },
+    "priceRange": "3.2M - 4.4M",
+    "featured": true
+  },
+  {
+    "name": "Serenity Estates",
+    "alias": "serenity-estates",
+    "type": "House",
+    "image": "/images/property-5.jpg",
+    "description": "Find serenity in your dream home at Serenity Estates in Gen. Trias, Cavite. Offering spacious houses with modern design, lush gardens, and a peaceful ambiance, this residential enclave provides a tranquil living experience. Immerse yourself in the perfect blend of comfort and tranquility, making Serenity Estates the ideal choice for those seeking a serene and sophisticated lifestyle. These homes are crafted with attention to detail, ensuring a harmonious environment that reflects the essence of peaceful living. Serenity Estates is distinguished by nature-inspired design elements that create a harmonious connection between the residences and the surrounding landscape. From the moment you step into your home, you're greeted by organic textures, earthy tones, and large windows that invite the natural beauty of Gen. Trias into your living space. The architectural design seamlessly integrates with the lush surroundings, ensuring that every corner of your home is a serene retreat inspired by nature. Serenity Estates goes beyond traditional living by providing residents with private outdoor sanctuaries. Each house features carefully landscaped gardens, inviting residents to create their personal oasis. Whether you prefer a tranquil meditation space, a vibrant flower garden, or a cozy outdoor lounge, these private sanctuaries allow you to immerse yourself in the serenity of nature right outside your doorstep. Embracing the philosophy of wellness-centric living, Serenity Estates prioritizes the overall well-being of its residents. The community is designed to promote an active and balanced lifestyle, with jogging trails, fitness stations, and open green spaces for recreational activities. Residents can enjoy the benefits of a healthy and active lifestyle within the tranquil confines of Serenity Estates, making it an ideal choice for those seeking holistic well-being.",
+    "location": {
+      "city": "Gen. Trias, Cavite",
+      "coordinates": {
+        "lat": 14.901,
+        "long": 121.789
+      }
+    },
+    "priceRange": "2.1M - 3.9M",
+    "featured": true
+  },
+  {
+    "name": "Urban Haven Apartments",
+    "alias": "urban-haven-apartments",
+    "type": "Apartment",
+    "image": "/images/property-4.jpg",
+    "description": "Embrace city living at its finest in Urban Haven Apartments. Modern, stylish apartments designed for urban professionals, offering convenience and a vibrant lifestyle. Situated in Calamba, Laguna, these apartments provide a seamless blend of modern aesthetics and practicality. Urban Haven Apartments redefine urban living, featuring thoughtfully designed spaces, premium amenities, and a location that puts you in the heart of the bustling city. Urban Haven Apartments introduce smart living solutions tailored to the needs of urban professionals. Each apartment is equipped with cutting-edge technology and home automation systems, allowing residents to control lighting, temperature, and security effortlessly. The seamless integration of smart features enhances the efficiency and comfort of daily life, ensuring that Urban Haven Apartments are not just residences but advanced living spaces that complement the modern urban lifestyle. Urban Haven Apartments are strategically located in close proximity to a diverse array of entertainment and culinary establishments. From trendy cafes and upscale restaurants to theaters and cultural venues, residents have access to a vibrant hub of activities. The bustling cityscape becomes an extension of your living space, offering endless options for entertainment, dining, and cultural experiences right at your doorstep. Recognizing the evolving nature of work, Urban Haven Apartments feature flexible co-working spaces within the community. Residents can choose to work from the comfort of their apartments or utilize the dedicated co-working areas equipped with high-speed internet and ergonomic furnishings. This innovative approach to living and working promotes a balanced and flexible lifestyle, catering to the dynamic needs of urban professionals.",
+    "location": {
+      "city": "Calamba, Laguna",
+      "coordinates": {
+        "lat": 14.567,
+        "long": 121.678
+      }
+    },
+    "priceRange": "1.8M - 2.9M",
+    "featured": true
+  },
+  {
+    "name": "Sunset View Residences",
+    "alias": "sunset-view-residences",
+    "type": "Condominium",
+    "image": "/images/property-3.jpg",
+    "description": "Witness breathtaking sunsets from your own haven at Sunset View Residences. These luxury condominiums boast panoramic views, upscale amenities, and a coveted location in Sta. Rosa, Laguna. Experience a lifestyle of unparalleled elegance with thoughtfully designed spaces and top-notch features. Sunset View Residences redefine the concept of luxurious living, providing a serene retreat amid the dynamic cityscape. Sunset View Residences offer residents a private oasis where every evening unfolds with breathtaking sunset panoramas. The strategically positioned balconies and expansive windows provide unobstructed views of the sun gracefully descending over the horizon, casting hues of amber and pink across the Laguna skyline. This daily spectacle transforms each residence into a sanctuary where you can unwind and appreciate the natural beauty that graces Sunset View Residences. In addition to the stunning views, Sunset View Residences prioritize the well-being of residents by offering an exclusive wellness retreat within the condominium complex. The spa and wellness center provide a haven for relaxation and rejuvenation, featuring indulgent treatments, saunas, and tranquil spaces. Residents can escape the hustle and bustle of daily life and immerse themselves in a holistic wellness experience that complements the luxurious living offered at Sunset View Residences. Sunset View Residences boast artfully designed interiors that reflect a blend of sophistication and comfort. The architectural detailing, custom finishes, and curated decor create an ambiance of refined elegance within each condominium. Thoughtful layouts maximize space and functionality, ensuring that every corner of your residence is a masterpiece. From the grand entrance foyer to the private bedrooms, every aspect of Sunset View Residences exudes a sense of opulence and timeless design.",
+    "location": {
+      "city": "Sta. Rosa, Laguna",
+      "coordinates": {
+        "lat": 14.678,
+        "long": 121.567
+      }
+    },
+    "priceRange": "1.5M - 3M",
+    "featured": true
+  },
+  {
+    "name": "City View Towers",
+    "alias": "city-view-towers",
+    "type": "Condominium",
+    "image": "/images/property-8.jpg",
+    "description": "Live above the city skyline at City View Towers. Modern architecture, top-notch amenities, and a prestigious address await you in Quezon City, Metro Manila. Experience urban living with unmatched luxury, where each condominium is a statement of style and sophistication. City View Towers redefine city living, offering residents an elevated lifestyle with convenient access to the city's vibrant energy. City View Towers elevate the concept of luxury living by providing residents with sky-high condominiums that offer unobstructed views of the cityscape. The floor-to-ceiling windows frame a panoramic tableau of lights and skyscrapers, creating an immersive experience that extends beyond your residence. Living above the city skyline, residents enjoy a constant connection to the vibrant energy and dynamic life that defines Quezon City. City View Towers take resident services to the next level by offering exclusive concierge services that cater to the diverse needs and preferences of residents. From arranging transportation and reservations to personalized assistance, the resident concierge ensures a seamless and luxurious living experience. City View Towers are not just residences; they are a curated lifestyle that prioritizes convenience, comfort, and personalized service for each resident. Nestled in Quezon City, Metro Manila, City View Towers provide residents with a prestigious address that combines urban sophistication with cultural proximity. The condominium complex is strategically located near cultural landmarks, theaters, and entertainment hubs, offering residents the opportunity to immerse themselves in the rich tapestry of arts and culture that Quezon City has to offer. City View Towers provide a lifestyle where luxury meets cultural vibrancy. City View Towers feature artfully designed common spaces that serve as extensions of residents' homes. The grand lobby, rooftop gardens, and communal areas are meticulously curated to provide spaces for socializing, relaxation, and recreation. These common spaces are not just functional; they are an extension of the modern and sophisticated design ethos that defines City View Towers, creating an atmosphere of refined elegance throughout the entire condominium complex.",
+    "location": {
+      "city": "Quezon City, Metro Manila",
+      "coordinates": {
+        "lat": 14.676,
+        "long": 121.043
+      }
+    },
+    "priceRange": "2.2M - 3.5M"
+  },
+  {
+    "name": "Historic Charm Townhouses",
+    "alias": "historic-charm-townhouses",
+    "type": "Town House",
+    "image": "/images/property-9.jpg",
+    "description": "Step back in time with our Historic Charm Townhouses in Vigan, Ilocos Sur. Experience classic architecture, cobblestone streets, and the warmth of a close-knit community. These townhouses offer more than just a home; they provide a nostalgic journey through time, combining timeless design with modern conveniences. Historic Charm Townhouses are not just residences; they are a celebration of heritage and a unique living experience. Historic Charm Townhouses serve as architectural time capsules, preserving the charm and grandeur of a bygone era. The classic architecture reflects the rich history of Vigan, Ilocos Sur, and transports residents to a time when cobblestone streets and ornate facades defined the landscape. Each townhouse stands as a testament to the enduring beauty of historical design, creating an atmosphere of timeless elegance that captivates the senses. Living in Historic Charm Townhouses offers residents the opportunity to partake in the vibrant community events and festivals that characterize Vigan's cultural heritage. The close-knit community comes together to celebrate local traditions, ensuring that every resident becomes an integral part of the cultural tapestry. From colorful parades to culinary festivals, residents can immerse themselves in the spirit of Vigan's lively traditions, making every day a celebration of heritage. While Historic Charm Townhouses exude the charm of yesteryears, they seamlessly integrate modern conveniences to enhance residents' lifestyles. The townhouses feature state-of-the-art amenities, energy-efficient systems, and smart home technology, offering a perfect blend of historical charm and contemporary comfort. Residents enjoy the best of both worlds—a living experience that honors tradition while embracing the ease and efficiency of modern living. Historic Charm Townhouses boast enchanting courtyard gardens and outdoor retreats, providing residents with private oases amidst the historical charm. The meticulously landscaped gardens offer a tranquil escape where residents can unwind, surrounded by the fragrance of blooming flowers and the soothing sounds of nature. These outdoor spaces further enhance the living experience, inviting residents to connect with the historic surroundings in a peaceful and intimate setting. Living in Historic Charm Townhouses is not just a residential choice; it is a commitment to the preservation of architectural heritage. Each townhouse contributes to the continued legacy of Vigan's historic architecture, ensuring that the cultural and historical significance of the community endures for future generations. Residents become stewards of the past, playing a vital role in maintaining the authenticity and charm that define the unique character of Vigan, Ilocos Sur.",
+    "location": {
+      "city": "Vigan, Ilocos Sur",
+      "coordinates": {
+        "lat": 17.574,
+        "long": 120.387
+      }
+    },
+    "priceRange": "1.8M - 2.9M"
+  },
+  {
+    "name": "Family Haven Homes",
+    "alias": "family-haven-homes",
+    "type": "House",
+    "image": "/images/property-10.jpg",
+    "description": "Create lasting memories in our Family Haven Homes in Davao City, Davao del Sur. Spacious interiors, private gardens, and a sense of community make it the perfect family retreat. These homes are designed for comfort and functionality, providing ample space for every family member. Family Haven Homes redefine the concept of a family residence, offering a haven of joy and connection in the heart of Davao City. Family Haven Homes prioritize expansive indoor and outdoor living spaces, providing families with the ideal setting to create cherished memories. The interiors are thoughtfully designed to accommodate the diverse needs of every family member, ensuring that each room serves as a comfortable and welcoming retreat. Beyond the walls, private gardens beckon, offering a tranquil backdrop for family gatherings, playtime, and moments of relaxation beneath the open sky. Living in Family Haven Homes goes beyond the individual residences, fostering a community-centric lifestyle that encourages connections among neighbors. The sense of community is enhanced by communal spaces, parks, and social events that bring families together. Residents have the opportunity to build lasting friendships, organize community activities, and create a supportive network that enriches the overall living experience. Family Haven Homes are strategically located near educational and recreational facilities, ensuring that families have access to a range of resources for both learning and leisure. Proximity to schools, parks, and cultural centers provides children with enriching experiences, while parents can appreciate the convenience of having essential amenities within reach. This holistic approach to community planning enhances the quality of life for families in Davao City. The design of Family Haven Homes reflects an innovative approach to family-centric living, with features that cater to the evolving needs of modern households. From flexible living spaces that adapt to various family activities to smart home technology that enhances convenience, these homes are crafted to accommodate the dynamic lifestyles of contemporary families. Family Haven Homes are more than just residences; they are a testament to the evolving concept of family living. Family Haven Homes provide the perfect backdrop for celebrating life's milestones. Whether it's birthdays, anniversaries, or simple everyday moments, each home becomes a canvas for joyous occasions. The spacious layouts, functional kitchens, and inviting gathering spaces make it easy for families to come together and celebrate, creating a home filled with love, laughter, and a lifetime of meaningful memories.",
+    "location": {
+      "city": "Davao City, Davao del Sur",
+      "coordinates": {
+        "lat": 7.190,
+        "long": 125.455
+      }
+    },
+    "priceRange": "2.7M - 4.0M"
+  },
+  {
+    "name": "Skyline Suites",
+    "alias": "skyline-suites",
+    "type": "Apartment",
+    "image": "/images/property-11.jpg",
+    "description": "Reach new heights with Skyline Suites in Cebu City, Cebu. Enjoy panoramic city views, sophisticated interiors, and a convenient urban lifestyle in the heart of the metropolis. Each apartment is meticulously designed for modern urbanites, providing not just a residence but a lifestyle statement. Skyline Suites redefine urban living, offering residents an unmatched experience in the vibrant cityscape of Cebu. Skyline Suites welcome residents into a world of floor-to-ceiling elegance, where each apartment is designed to maximize the breathtaking panoramic views of Cebu City. The expansive windows showcase the dynamic cityscape, creating a visual masterpiece that evolves with the changing hues of the sky. Living at Skyline Suites is an immersive experience, allowing residents to witness the pulsating energy of the metropolis from the comfort of their sophisticated urban retreat. Meticulous attention to detail defines the interiors of Skyline Suites, where sophistication is infused into every aspect of design. From custom finishes to high-end appliances, each apartment reflects the commitment to providing a living space that exudes modern luxury. The sophisticated interiors seamlessly blend aesthetics with functionality, creating an ambiance that resonates with the discerning taste of modern urbanites. Skyline Suites offer more than just a residence; they provide a seamless connection to the vibrant urban lifestyle of Cebu City. Situated in the heart of the metropolis, residents enjoy convenient access to business districts, shopping centers, and cultural hubs. The strategic location enhances the overall quality of life, allowing residents to immerse themselves in the diverse offerings of city living without compromising on comfort and tranquility. Skyline Suites feature an exclusive resident wellness center that reflects a commitment to holistic living. Residents can indulge in fitness routines, relaxation therapies, and wellness programs within the condominium complex. The wellness center becomes a retreat within the urban setting, offering residents a sanctuary to rejuvenate and maintain a balanced lifestyle amidst the dynamic pace of city living. For those seeking a private retreat with a view, Skyline Suites offer exclusive private terraces overlooking the city skyline. These outdoor spaces become extensions of the living area, providing residents with the perfect setting for al fresco dining, entertaining guests, or simply enjoying moments of solitude against the backdrop of the bustling city lights. The private terraces at Skyline Suites elevate the concept of urban living by bringing the outdoors seamlessly into the modern urbanite's lifestyle.",
+    "location": {
+      "city": "Cebu City, Cebu",
+      "coordinates": {
+        "lat": 10.315,
+        "long": 123.885
+      }
+    },
+    "priceRange": "1.5M - 2.2M"
+  },
+  {
+    "name": "Seaside Retreat Apartments",
+    "alias": "seaside-retreat-apartments",
+    "type": "Apartment",
+    "image": "/images/property-12.jpg",
+    "description": "Escape to seaside luxury at Seaside Retreat Apartments in Puerto Princesa, Palawan. Breathtaking ocean views, modern design, and resort-style amenities await you. Each apartment is a tranquil retreat, providing residents with the perfect blend of coastal serenity and contemporary living. Seaside Retreat Apartments redefine beachfront living, offering an unparalleled experience in the picturesque setting of Puerto Princesa. Seaside Retreat Apartments open up to an endless horizon of ocean serenity, where residents can wake up to the soothing sounds of waves and panoramic views of the Palawan coastline. The beachfront location offers unobstructed vistas of the crystal-clear waters and pristine sands, creating an idyllic atmosphere that transports residents into a perpetual state of relaxation and tranquility. Beyond the shoreline, Seaside Retreat Apartments offer an array of resort-style amenities that cater to every aspect of coastal living. Residents can indulge in sun-drenched afternoons by the infinity pool, unwind in beachside cabanas, or explore water activities in the azure ocean. The condominium complex becomes a destination in itself, providing a resort-style living experience that seamlessly integrates with the natural beauty of the surroundings. The design of Seaside Retreat Apartments is a testament to architectural harmony with the coastal landscape. Modern aesthetics and sustainable design principles come together to create a residence that complements, rather than competes with, the natural beauty of Puerto Princesa. Floor-to-ceiling windows capture the essence of the beachfront, allowing residents to feel a constant connection to the ocean breeze and the ever-changing colors of the Palawan sunset. Seaside Retreat Apartments introduce a unique dining experience where residents can savor culinary delights with their toes in the sand. The condominium complex features beachfront dining areas and gourmet restaurants that offer a fusion of local and international flavors. Residents can enjoy al fresco meals while basking in the sea breeze, creating a culinary journey that is as refreshing as the ocean air. Residents of Seaside Retreat Apartments have access to a wellness retreat that harnesses the therapeutic power of the coastal environment. Yoga pavilions, spa facilities, and wellness programs are designed to promote holistic well-being, allowing residents to rejuvenate their minds and bodies amidst the calming presence of the ocean. Seaside Retreat Apartments redefine the concept of wellness living, offering a retreat that aligns seamlessly with the coastal beauty of Puerto Princesa.",
+    "location": {
+      "city": "Puerto Princesa, Palawan",
+      "coordinates": {
+        "lat": 9.742,
+        "long": 118.736
+      }
+    },
+    "priceRange": "1.3M - 2.0M"
+  }
+]
