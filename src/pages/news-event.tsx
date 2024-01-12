@@ -48,7 +48,7 @@ const newsAndEvent: TNewsEvent[] = mockNewsEvent.map((ne) => ({
 }));
 const NewsAndEvent = () => (
   <>
-    <div className="sliderWrapper">
+    <div className="sliderWrapper ">
       <div className="pt-[75px] flex-wrap text-center">
         <div className="py-20 flex flex-col justify-center items-center px-5">
           <p className="font-semibold text-2xl lg:text-3xl">News and Event</p>
@@ -59,7 +59,7 @@ const NewsAndEvent = () => (
             happenings.
           </p>
         </div>
-        <div className="relative full-screen-slider min-h-1/2 w-full mt-10">
+        <div className="relative full-screen-slider min-h-1/2 w-full py-20 overflow-y-hidden">
           <Slider {...settings} className="sliderContainer">
             {mockNewsEvent
               .filter((n) => n.featured)
