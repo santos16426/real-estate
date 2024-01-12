@@ -19,7 +19,7 @@ const PropertyPage: React.FC = () => {
   const { properties } = useAppContext();
   const { activeTab } = properties;
   const Controller = () => (
-    <div className="absolute cursor-pointer top-[100px] right-0 gap-2 flex flex-col">
+    <div className="hidden absolute cursor-pointer top-[100px] right-0 gap-2 lg:flex flex-col">
       <div className="relative flex flex-col gap-2 items-end">
         <div className="hover:gap-2  w-fit flex shrink flex-row justify-center group text-white items-center bg-black bg-opacity-70 p-4">
           <BookImage />
@@ -45,7 +45,7 @@ const PropertyPage: React.FC = () => {
   const HasProperty = () => (
     <div className="flex flex-col lg:flex-row overflow-hidden">
       <div className="lg:w-1/2 h-screen shadow-xl lg:fixed">
-        <div className="relative pt-[75px]">
+        <div className="relative lg:pt-[75px]">
           <PhotoGallery images={mockGallery} />
           <Controller />
         </div>

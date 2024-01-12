@@ -59,7 +59,7 @@ export const PhotoGallery = ({
       </Slider>
       <div className="absolute items-center bottom-0 px-2 lg:bottom-[80px] bg-primary h-[100px] text-white w-full flex flex-row justify-center gap-2 sm:gap-5">
         <ChevronLeft
-          className="bg-white bg-opacity-50 p-1 cursor-pointer hover:bg-opacity-25 rounded-full"
+          className="hidden lg:flex bg-white bg-opacity-50 p-1 cursor-pointer hover:bg-opacity-25 rounded-full"
           onClick={goToPrevSlide}
         />
         <div className="flex flex-row justify-center items-center gap-2 px-2 sm:gap-5 overflow-x-auto">
@@ -79,7 +79,7 @@ export const PhotoGallery = ({
           ))}
         </div>
         <ChevronRight
-          className="bg-white bg-opacity-50 p-1 cursor-pointer hover:bg-opacity-25 active:bg-opacity-25 rounded-full"
+          className="hidden lg:flex bg-white bg-opacity-50 p-1 cursor-pointer hover:bg-opacity-25 active:bg-opacity-25 rounded-full"
           onClick={goToNextSlide}
         />
       </div>
